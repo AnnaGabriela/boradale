@@ -1,7 +1,7 @@
 <template>
   <div class="profile">
     <img src="../assets/image.png" class="avatar">
-    <h1>Renata Martins</h1>
+    <h1 class="username">Renata Martins</h1>
     <p>@rentamartins123</p>
     <div class="description">
         <p>
@@ -19,12 +19,17 @@
     display: block;
     margin: auto;
     text-align: center;
+    margin-top: -68px;
 }
 .avatar {
     border-radius: 50%;
 }
 .description{
     background-color: #C4C4C4;
+}
+.username {
+    margin-top: 15px;
+    font-size: 25px;
 }
 </style>
 

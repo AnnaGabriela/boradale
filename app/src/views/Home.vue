@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <h1 class="hello">Olá, Renata!</h1>
-    <Group :title="title"/>
+    <!-- <h1 class="hello">Olá, Renata!</h1>
+    <Group :title="title"/> -->
     <Profile/>
   </div>
 </template>
