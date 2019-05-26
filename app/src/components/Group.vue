@@ -2,10 +2,11 @@
   <div class="group">
     <b-card :title="title">
       <b-card-text>
-        With supporting text below as a <br>
-        natural lead-in to additional content.
+        <span><b>Saída:</b> {{ start }}</span><br>
+        <span><b>Chegada:</b> {{ end }}</span><br>
+        <span><b>{{ amountPeople }} pessoas vão dale</b></span>
       </b-card-text>
-      <b-button class="button" href="#">Participar deste grupo</b-button>
+      <b-button v-show="hasButton" class="button" href="#">Participar deste grupo</b-button>
     </b-card>
   </div>
 </template>
@@ -14,14 +15,17 @@
 export default {
   props: {
     title: String,
+    start: String,
+    end: String,
+    amountPeople: Number,
+    hasButton: Boolean,
   },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 .group {
-  width: 90%;
+  width: 100%;
   display: block;
   margin: auto;
 }
@@ -37,9 +41,9 @@ export default {
 
 .card-title {
   text-align: left;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: bold;
-  letter-spacing: 50%;
+  letter-spacing: 3px;
 }
 
 .card-text {

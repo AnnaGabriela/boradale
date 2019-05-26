@@ -11,6 +11,6 @@ export default {
 .bar{
     background-color: #ED4848;
     width: 100%;
-    height: 78px;
+    height: 50px;
 }
 </style>
